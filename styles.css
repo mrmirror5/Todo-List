@@ -23,7 +23,6 @@ body {
 .basic-button {
     padding: 10px;
     font-weight: 600;
-    border: solid 3px rgb(82, 82, 82);
 }
 
 
@@ -57,23 +56,43 @@ body {
 }
 
 .rm-button {
-    width: 50pxpx;
+    width: 60px;
     border-radius: 30px;
     margin-left: 10px;
     background-color: rgb(255, 190, 190);
     display: flex;
     align-items: center;
     border: none;
+    transition: ease 0.15s;
+}
+
+.done-button {
+    width: 60px;
+    border-radius: 30px;
+    margin-left: 10px;
+    background-color: rgb(165, 248, 161);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: ease 0.15s;
     
 }
 
 .rm-button:hover {
-    background-color: rgba(116, 0, 0, 0.8);
+    background-color: rgb(247, 139, 139);
+}
+.rm-button:active {
+    background-color:rgb(235, 85, 85);
 }
 
-.rm-button:active {
-    background-color: rgba(116, 0, 0, 0.5);
+.done-button:hover {
+    background-color: rgb(109, 238, 102);
 }
+.done-button:active {
+    background-color: rgb(64, 224, 56);
+}
+
 
 .input-box {
     height: 50px;

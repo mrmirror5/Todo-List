@@ -28,11 +28,21 @@ function addTask(){
             </div>
             <div class="basic-button rm-button">
                 Remove
-            </div>    
+            </div>
+            <div class="basic-button done-button">
+                Done
+            </div>       
         `;
         //Event listener for removing task
         const removeButton = taskBody.querySelector(".rm-button");
+        const doneButton = taskBody.querySelector(".done-button");
+
         removeButton.addEventListener("click", function(){
+            document.getElementById("task-not-done-audio").play();
+            taskBody.remove();
+        });
+        doneButton.addEventListener("click", function(){
+            document.getElementById("task-done-audio").play();
             taskBody.remove();
         });
         inputBox.value = ""
