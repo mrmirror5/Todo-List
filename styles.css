@@ -23,6 +23,7 @@ body {
 .basic-button {
     padding: 10px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 
@@ -121,6 +122,7 @@ input:focus {
     height: 50px;
     width: 60px;
     box-sizing: border-box;
+    cursor: pointer;
 
     font-weight: 600;
     font-size: 1.2rem;
